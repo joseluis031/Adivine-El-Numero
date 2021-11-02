@@ -13,13 +13,14 @@ class Juegonumeroaleatorio:
         
     Intentos = 0
     while True:
-        numero_elegido = int(input("Adivina el numero ganador"))
-        if numero_elegido == random.randint:
-            print('Enhorabuena Campeon')
+        numero_elegido = int(input("Adivina el numero ganador "))
+        if numero_elegido ==  numero:
+            print("Enhorabuena Campeon")
             break
-        elif numero_elegido < random.randint:
-            print('Te has quedado corto')
-        elif numero_elegido > random.randint:
-            print('Te has pasado crack')
+        elif numero_elegido < numero:
+            print("Te has quedado corto")
+        else:
+            print("Te has pasado crack")
         Intentos += 1
-Juegonumeroaleatorio = Juegonumeroaleatorio.start
+
+    print ("Has necesitado ", Intentos, " intentos para adivinar el numero")
