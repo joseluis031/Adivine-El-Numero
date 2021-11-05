@@ -16,6 +16,7 @@ class Juegonumeroaleatorio:
         numero_elegido = int(input("Adivina el numero ganador "))
         if numero_elegido ==  numero:
             print("Enhorabuena Campeon")
+            break
         elif numero_elegido < numero:
             print("Te has quedado corto")
         else:
