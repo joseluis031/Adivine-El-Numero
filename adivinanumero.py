@@ -12,8 +12,10 @@ class Juegonumeroaleatorio:
         f'Adivina el numero ganador'
         
     Intentos = 0
+    # creo un bucle que permita tener varios internos para poder jugar hasta adivinar el numero
     while True:
         numero_elegido = int(input("Adivina el numero ganador "))
+        # Defino lo que quiero que se responda en la terminal, si has adivinado el numero o no
         if numero_elegido ==  numero:
             print("Enhorabuena Campeon")
             print ("Has necesitado ", Intentos, " intentos para adivinar el numero")
